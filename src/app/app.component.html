@@ -1,0 +1,51 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title | uppercase }}!
+  </h1>
+</div>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title | lowercase }}!
+  </h1>
+</div>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title | titlecase }}!
+  </h1>
+</div>
+
+<h2>{{dn}}</h2>
+
+<h2>{{dn | date}}</h2>
+
+<h2>Minutes secondes : {{dn | date: 'mmss' }}</h2>
+
+<h2>Annee : {{dn | date: 'yyyy' }}</h2>
+
+<h2>{{salaire}}</h2>
+
+<h2>{{salaire | currency: 'EUR'}}</h2>
+
+<h2>{{salaire | number }}</h2>
+
+<h2>{{salaire | number:'1.0-2' }}</h2>
+
+<h2>Annee : {{dn | date: 'yyyy'}}</h2>
+
+<h2> {{dn | date: 'd MMM y' | uppercase }}</h2>
+
+<h1>{{texte | monFiltre}}</h1>
+
+<input type="submit" (click)="incrementer()" value="Incrémenter">
+
+<h2>{{texte | monFiltre2:repeat}}</h2>
